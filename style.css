@@ -1,0 +1,252 @@
+
+/* GENERAL STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #172b4d;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 5px;
+}
+
+header h2 {
+    font-size: 22px;
+    margin: 5px;
+}
+
+header p {
+    margin: 5px;
+    color: #dbe4f0;
+}
+
+
+/* NAVIGATION BAR */
+
+nav {
+    background-color: #d6a84f;
+}
+
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar li a {
+    display: block;
+    color: #172b4d;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+}
+
+.navbar li a:hover {
+    background-color: #172b4d;
+    color: white;
+}
+
+
+/* DROPDOWN MENU */
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.dropdown-menu li a {
+    padding: 12px 15px;
+    color: #172b4d;
+    font-weight: normal;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+
+
+/* HOME SECTION */
+
+.hero {
+    background-color: #e8edf5;
+    text-align: center;
+    padding: 65px 25px;
+}
+
+.hero h2 {
+    color: #172b4d;
+    font-size: 30px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: 20px auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #172b4d;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #d6a84f;
+    color: #172b4d;
+}
+
+
+/* COMMON SECTIONS */
+
+section {
+    background-color: white;
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+}
+
+section h2 {
+    color: #172b4d;
+    border-bottom: 3px solid #d6a84f;
+    padding-bottom: 10px;
+}
+
+
+/* CARDS */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f4f6f9;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 4px solid #d6a84f;
+    border-radius: 5px;
+}
+
+.card-container .card {
+    flex: 1 1 220px;
+}
+
+.card h3 {
+    color: #172b4d;
+}
+
+
+/* LISTS */
+
+ul {
+    padding-left: 25px;
+}
+
+section li {
+    margin-bottom: 8px;
+}
+
+
+/* LINKS */
+
+section a {
+    color: #172b4d;
+}
+
+section a:hover {
+    color: #d6a84f;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #172b4d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+    }
+
+    section {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    .hero {
+        padding: 35px 15px;
+    }
+
+    .hero h2 {
+        font-size: 23px;
+    }
+
+}
